@@ -1,0 +1,115 @@
+guido van rossam 
+feb 20th 1991
+name came from Monty python circus comedy show
+
+...................................
+features of python 
+..............................
+1.simple and easy to learn
+2.freeware and open source
+3.high level language 
+4.platform independent 
+5.portable
+6.dynamically typed programing language
+7.both procedure oriented and object oriented
+8.interpreted
+9.extensible2
+10.it is embedded
+11.extensive library support
+
+...............................................
+limitation on python :
+..............................................
+1.performance wise it is not upto the mark
+2.not used for in mobile application
+Myth : python not suitable for large scale applications....
+
+................................................
+flavour of python
+...............................................
+1.CPython
+2.Jython or Jpython
+3.IronPython 
+4.Pypy(high performance than python)
+5.Rubypython
+6.AnacondaPython
+
+........................................................
+Identifiers:
+	name of any variable , function, class , etc is nothing but identifier.
+.............................................................
+
+.......................................................
+Rules to define in identifier :
+.......................................................
+1.alphabet symbols(both upper and lower case)
+  digits 
+  underscores
+only the above symbols are allowed in identifer declaration
+2.identifier should not start with digit but can start with underscore.
+3.identifier is case sensitive (A and a are different)
+4.key word should not be used as an identifier
+5.they should be too long for good practice
+
+........................................................
+
+If identifier start with 
+1.  _ ==> then it is private(single underscore)
+2.  __ ==> then it is strongly private (double underscore)
+3. __identifier__  ==>  then it language specific variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
