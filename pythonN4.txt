@@ -1,0 +1,45 @@
+..................................................
+Reserved Words (KEYWORDS): Total 33 reserved words
+	['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+..................................................
+NOTE:
+`	1. all key word contain alphabet symbols
+	2.except True,False,None every keyword is in lower case
+	
+...............................................................
+
+................................................................
+Data Types :
+	type of data contain inside the container or variable is the data type
+...........................................................
+  
+int , float , complex , string , list , bool , byte , bytearray ,range , tuple , set , frozenset , dict , None
+
+	total there are 14 build in data types. 
+	
+................................................................
+
+In python every thing is stored in a from of object.
+id() function is use to give the adress.
+...........................................................
+
+1.int : it is use to declare the whole number.
+
+  number can be represented in :
+    decimal , binary , octal , hexadecimal.
+    
+    binary number = 0b110 or 0B0101  (0-1)
+    octal number = 0O123 or 0o123  (0-7)
+    hexa Decimal number = 0x633a or 0Xaa90  (0-9 and a to f (we can use both lower or upper case)).
+    
+    python always give out put in decimal.
+................................................................
+
+	
+
+
+
+
+
+
