@@ -1,0 +1,48 @@
+
+
+.........................................................
+Base conversion function :
+	bin()
+	oct()
+	hex()
+............................................................
+
+...............................................................
+ 
+ Float datatype :  to handle the number with decimal we use float instead of int.
+ 	for floating data type we have to use only decimal form   binary , octal and hexagonal not possible and can not been use. we can also use expotenial form
+ 	e.g =1.2e3 ==> 1.2 * 10**3 
+ 	
+ 
+....................................................................
+
+ Complex datatype : to handle the complex number we use complex number.  e.g a+bj ==> 12 + 23j
+	here  a is the real number and b is the imaginary number and vale of j is under root of -1. a and b can be both int or float.
+	we have to use only j and can not any another literal.
+	if we use real part as decimal form then we can use any form like binary , decimal , hexagonal , octal but in imaginary part we have to use only decimal form.
+	  a = 2 + 3j  ... a.real = 2 and a.imag = 3 
+	 
+............................................................................
+
+ Bool datatype : it is use to represent the boolean values.
+	T and F of true and false should be capital. True ==>1 and False ==>0 this is how they are treated.
+	
+................................................................................
+
+ String datatype : any sequence of character. we have to enclose it in single or double quote. by default python follow single quote. 
+ 	for multi line string we have to use triple single quote or triple doulbe quote. 
+	slice operator : use to slice(similar to substring) the string  
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
