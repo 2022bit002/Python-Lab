@@ -1,0 +1,76 @@
+  Typecasting
+  ................................................................
+ 	int() == use to convert to integer
+ 	
+ 	complex cannot converted into int or float
+ 	bool to int true==>1   and  false =>0
+ 	string can be convert into int only if they are in numeric string
+ 	
+ .........................................................
+ 
+	float() == use to convert into float
+	
+	complex cannot converted into int or float
+	string can be convert into float only if they are in numeric string with decimal base
+ 	
+...............................................................
+
+	complex() == use to convert into complex
+	
+	form1 = complex(x) ==> x+0j
+	form2 = complex(x,y) ==> x+yj
+	 both x and y cannot be string in from2 it will through error
+	
+..................................................................
+
+	bool() == use to convert into bollean type.
+	
+	except for 0 (zero) we will alway get True as an output for all int input.
+	simialar with float value as an input as interger.
+	for complex number if both real and imaginary part are zero then only False otherwise always True.
+	for empty string then only as false otherwise always True . 
+	
+...................................................................
+
+	str() == use to convert into String type.
+	
+	any type to string is possible .
+	
+..............................................................................
+       ......................................
+       :Immutable vs fundamental data types :
+       :....................................:
+	immutable means cannot be changed .
+	 
+	x=10 and y=10 then we have created only 1 object and x and y are referancing it , x&y both are the referance variable.
+	
+	1.all fundamental data type is immutable.
+	2. every thing in python is an object.
+
+.......................................................................
+
+	for float and complex number there is no reusibility of object every time new object is created and has differnt address.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
