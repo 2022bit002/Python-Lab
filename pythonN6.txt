@@ -47,15 +47,34 @@
 	1.all fundamental data type is immutable.
 	2. every thing in python is an object.
 
-.......................................................................
+...............................................................................
 
 	for float and complex number there is no reusibility of object every time new object is created and has differnt address.
+	it is because in float there are infinite numbers that can be created.hence it is not possible to decide the range .similar with the complex number also .
+	
+	
+...............................................................................
+	
+	0 to 256 ==> fixed in integer.
+	bool ==> True or false it is also fixed .
 
+...............................................................................
 
+	bytes data type :
+	
+	it represent the group of byte number.	it has a range of 0 to 256 only .if it is not in this range it will throw an error.
+	bytes datatype is immutable.
 
-
-
-
+	bytearray data type :
+	it is similar to the byte but it is mutatable, so we can change the iteam inside it and assign the new iteam in it.
+...............................................................................
+ 
+ 	list data type:
+ 	
+ 	insertion order is preserved and duplicate are allowed. Insertion order preserved means in the order we add the element in the same order they are present inside the list .
+ 	list is also growable based on our need . so order also imprtant in list .
+ 	
+................................................................................
 
 
 
