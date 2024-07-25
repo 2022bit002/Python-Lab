@@ -1,0 +1,56 @@
+
+-------------------------------------------------------
+  TUPLE:
+	insertion order preserved 
+	duplicate are allowed
+	heterogenous objects (any type of object (i.e int,float,string))
+	but it is immutable
+
+list vs tuple :: list is mutable but tuple is immutable
+
+-------------------------------------------------------
+
+  RANGE :
+  
+	range datatype represent a sequence of values which are immutable
+	
+	form 1 : range(5):: output 0 1 2 3 4
+		it gives out  put with given value excluded .
+	
+	form 2 : range(0,5):: output 0 1 2 3 4
+		it exclude the value of 2nd argument in range function.
+		
+	form 3 : range(0,10,2):: output 0 2 4 6 8 
+		it excluded the 2nd argument and 3rd argument is the step  which is difference between the two values.
+	it takes only the integer value and not the float values .
+	set does not contain the duplicate.
+	
+------------------------------------------------------
+
+ SET :
+ 	order is not preserved.(does not support indexing)
+ 	does not contain duplicate value.
+ 	it is mutable (use the methods such as add , remove to add and remove the iteams).
+ 	heterogenous objects are allowed .
+ 	
+------------------------------------------------------------
+   
+ FROZENSET :
+ 	 set and frozenset is same but forzenset is immutable .
+ 	 it does not contain the duplicate values .
+ 	 frozenset doees not have any thing similar to add and remove in set
+ 	 
+-------------------------------------------------------
+
+ DICTIONARY :
+	it saves the  value in the form of key value pair .
+	it is mutable and just vaule changes and key remain the same.
+	
+	if there is a={} then it is treated as dictionary. 
+	  
+ 	
+	
+	
+			
+	
+	 
