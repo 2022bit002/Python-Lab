@@ -1,0 +1,33 @@
+
+operator :
+
+----------------------------------------
+	1. Arithmatic operator
+---------------------------------------
+ 		+ ==> Addition
+ 		- ==> subtraction
+ 		* ==> multiplicaton
+ 		/ ==> division (it always generatee floor values)
+ 		% ==> modular
+ 		// ==> floor division (if argument are float then return float type  or if they are int type then it give int type )
+ 		** ==> power operator
+ 		
+ 	+ operator is available in string it is called as string concatination.
+ 	if one operand is string then result will be string(this will happen only in java and not in python . there is going to be error). if want to apply + opera tor to string both the operand should be string .
+ 	if multiply the string with any number then the string is going to return it self that number of time as a single string .  ex "pankaj"*2 ="pankajpankaj" but the number should be int and not float .
+ 	
+ -----------------------------------------------
+ 	2. Relational operator
+ -----------------------------------------------
+ 
+ 	A ==> 65 , a ==> 97 are the unicode of the alphabet so comparing them will give true or false based don their order of letter if we compare them 
+ 	chaning of operator ==>
+ 	 a > b > c this will return true if all operation are true else it will return false.
+ 	 
+ ----------------------------------------------------
+ 	
+ 	
+ 	
+ 	 
+	
+	
