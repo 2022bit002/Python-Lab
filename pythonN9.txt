@@ -1,0 +1,80 @@
+'pankaj'>'dhoran' ==> True 
+ascii value of the character is is checked in sequence .
+
+-------------------------------------------------
+Chaining of the relationall operator :
+	10<20<30<40 ==>
+	
+	it give true only if all the expression are true.
+	else if any one is false then the result is false
+
+-------------------------------------------------------
+
+  1 == True ==> True as the value of true is one 
+  0 == False ==> False as the value of false is zero by default.
+  
+  chaining of this operator is possible as the above given True if all equation are true or False for any one is false .
+  == this operator only use to check the contain.
+  
+  10 == 10.0  ==> True as int can be converted into float
+  
+-----------------------------------------------------------
+
+Logical Operator : and , or , not  ==> this three operator are present in this operator .
+
+   and ==> if both argument are true then it return true.
+   or ==> if atleast one argument is True then it return true.
+   not ==> it just like an inverter it can negotiated the value.
+   
+   For non boolean types :
+    1. zero means False 
+    2. any non-negative number is True
+    3. empty string is false
+    
+    -------------------------------------
+    
+    x and y :
+    ---------------------------
+    if x is evaluated to False then it returns x 
+    if x evalutaes to True  then it return y
+    -------------------------------
+    
+    x or y :
+    -----------------------------------------
+    if x evalutes to True then return x otherwise return y
+    
+    -------------------------------------------------
+    
+Bitwise Operator :
+	& ,| ,^ ,~ ,<< ,>> this operator are consider in bitwise operator
+	
+	it is applicable for only int and boolean .
+	
+    & ==> if both the bits are one then 1 otherwise 0
+    | ==> if atleast one bit is 1 otherwise 0
+    ^ ==> if both bit are different then 1 other wise 0 (xor)
+    ~ ==> bitwise complemtator .. 1==> 0 and 0 ==> 1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
