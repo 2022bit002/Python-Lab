@@ -1,0 +1,62 @@
+--------------------------------------------------
+Shift operator :
+--------------------------------------------------
+	
+	<<  ==>Left Shift operator 
+	>> ==> Right shift operator.
+	
+	10 << 2  (Left shift) : 10 ==> 1010 shift it to left side by two bit  ==>  101000 this in decimal is 40.
+	10 >> 2  (Right shift): 10 ==> 1010 shift it ot right hand side by two then the left hand side vacent slot is filled with cells sign bit .
+	+ve number ===> 0  and   -ve number ===> 1
+	so as the number 10  is positive then the vacant number is filled with cells bit so result will be 2 ==> 0010
+	if it was negative valu -10 then result will be -3 
+	
+	True << 2 ==> 00000100 in binary result 4 in decimal.
+	true >> 2 ==> 00000000 in binary result 0 in decimal.
+	
+----------------------------------------------------------------------------------
+Assignment Operator :
+----------------------------------------------------------------------------------
+   
+	= ==> this use to assign the value to the variable.
+	
+	using the asssignment operator with another operator gives the compound assignment operator.ex += ,-=,*+, etc.
+	 if we use (++10) then it will print 10 because it will just trat it as a sign and not the increment operator. Similarly if we use the (--10)then it is -(-10) which will orint the 10 .
+	 but if we use 10++ then it will throw the syntax operator.
+	 
+	 += ,-= , /= ,*= ,//=,&=,**=,<<=,>>=,%=,&=,|=
+	 
+----------------------------------------------------------------------------------
+Ternary Operator :
+---------------------------------------------------------------------------------
+	
+	q ? w : p  ==> this is the syntax of the ternary operator.
+	if q is true the w will run otherwise p will run if the condition is false.
+	But in python it is present so it will give syntax error if we try to use the above syntax because there is different syntax in python.
+	
+	x=40 if 20>10 else 20 this is the syntax in python 
+	x=10 if 20>30 else 40 if 50>60 else 70  || this another condition if once get false the it look on another condition after first else then according ot it give result it similar to the nested loop.
+	
+	example : max=a if a>b>c else b if b>c else c here if we give the value of the variable then it will return the largest number.But here if b is not grater than c then it will give wrong answer so we have to check it using the an operator.
+	max  = a if a>b & b>c else b if b>c else c will be the correct answer.
+	
+-----------------------------------------------------------------------------
+
+	2 Special operator : 1.Identity Operator 2.Membership Operator
+	
+----------------------------------------------------------------------------
+Identity operator :
+	is : use to check the object pointed by the referance variable if the reference variable point to the same object.
+	a=10   b=10             a is b will return True . Similarly is not can also be used.
+	if both the referance variable pointing to the same object.   
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	                      
+	
