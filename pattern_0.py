@@ -92,7 +92,7 @@ def draw_pattern_8(x):
 			print('*',end='')
 		print()
 
-draw_pattern_8(5)
+draw_pattern_5(5)
 		
 		
 		
