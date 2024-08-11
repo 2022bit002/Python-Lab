@@ -5,6 +5,7 @@ def print_pattern(x):
 	a=int(x)
 	w= x%a
 	
+	#Validation of a number wheather it is proper input or not..
 	if(x<1 or  w!=0):
 		return "Invalid input !!! \nPlease give proper input" 
 	else:

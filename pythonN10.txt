@@ -48,8 +48,8 @@ Ternary Operator :
 Identity operator :
 	is : use to check the object pointed by the referance variable if the reference variable point to the same object or not .
 	a=10   b=10             a is b will return True . Similarly is not can also be used.
-	if both the referance variable pointing to the same object.   
-	
+	if both the referance variable pointing to the same object. 
+	is not is also an identity operator
 	
 	
 	

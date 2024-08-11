@@ -1,0 +1,112 @@
+for address comparison is operator is use .
+Then for contain comparison == is use .
+
+------------------------------------------------------
+Membership Operator : 
+------------------------------------------------------
+
+	in : it use to check wheather it is present in the given place.
+		l = [10,20,30]                      10 in l ==> Ture 
+	not in :  inverts the answeer given by the 'in' operator.
+		
+----------------------------------------------------------
+Operator precedence :
+----------------------------------------------------------
+	
+	()==> paranthesis
+	**==>expotential operator
+	~,- ==>unary operator
+	*,/,%,// ==>binary operator
+	+,-
+	<<,>>
+	&,|,^
+	>,>=,<,<=,==,!=
+	=,+=,-=*=
+	is,is not
+	in, not in
+	not 
+	and
+	or
+	
+	the above is the precedence order of the operator
+	
+	
+	the less the argument the more is the priority of that operator :
+	unary operator : ~x    one argument 
+	binary operator : x + y   two argument
+	ternary operator : three argument 
+	
+------------------------------------------------------------------------------------------------
+	Module : a group of functions , variables , classes , etc .
+	Library : it is the group of modules.
+-------------------------------------------------------------------------------------------------
+	We have to import the module which we have to use inside the code or in particular file.
+	--------------------------------
+	Aliasing : renaming the file for it use .
+	ex : import math as m
+	if we declare it in such we can use m insted as of math . If we then use math then it will show math as undefine as we declare math as m.
+	
+	If we want to import an single function form an module then :
+	ex : from math import sqrt it will import the sqrt function .
+	 
+	* if we use it then it will import all the file .
+	
+	if we use : import math  then we have to use math while using the function
+	if we use : from math import * then we can dircetly use the function without any math.
+	
+---------------------------------------------------------------------------------------------
+
+	Input and Output statements :
+------------------------------------------------------------
+	Read dynamic data type from the keyboard :
+	
+	x = raw_input('enter the number') :  we require to use the typecasting functions.
+	
+	y = input('enter the number') : not consider as str type what ever type provided we are not reqired to typecaste .
+		the above condition was present only in python2 . raw_input is not present in python3 .
+		Python-3 : we have to do typecasting for different datatype as it will always give the result in string datatype.
+		  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
