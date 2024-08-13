@@ -24,3 +24,6 @@
 		ex . : py test.py 10 20 30 ,etc
 		similar to the String args[] we have the argv which is the variable that hold all the command line vaues we give at the time of ruunning of the code. argv is an list type so it can take the multiple input .
 		argv is present inside the sys module so to use it we have to import the module
+		if we print the argv using the print function then it will return the all the value including the file name .
+		file name is at the zero index then the value given at the time of running will be return as the list.
+		using the slice operator we can remove the fil name. ex : (argv[1])
