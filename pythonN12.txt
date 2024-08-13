@@ -1,0 +1,26 @@
+	input is always is string because it is most time used so it becamet the default setting hence it is give as string.
+	we can use the typecasting to overcome the draw back as we have to convert the string to any data type.
+	we can read the data from the key board using the input function.
+-----------------------------------------------------------------------------------------
+
+	we can read multiple values from the keyboard : 
+	a,b = [int(x) for x in inout ("Enter the two digit number : ").split()]
+	the above expression will give the list as an return value for the input.
+	split is been use to take the input with the space in between.Here the input list is been created using the int() functionwith the for operator.
+-----------------------------
+	to sepration using the comma and take the value :
+		input("Enter the 2 float number : ").split(',')
+	so the split(',') will act as the  seprater for the two values in the given function.
+-------------------------------------------------------------------------
+	eval() : it is use to evaluate the expression it take input in the form of the string.
+	the result of the eval is in the form of the datatype that as been use by the user as the input from the user in the given data.
+	so instead of typecasting we can use the single eval function can be use to convert the data.
+	a,b,c = [eval(x) for x in input ("Enter the values").spilt() ]
+	here eval will convert the data in the type the want it to be in
+---------------------------------------------------------------------------------
+	
+	Command line arguments :
+		passing the values from the command prompt while running the programm.
+		ex . : py test.py 10 20 30 ,etc
+		similar to the String args[] we have the argv which is the variable that hold all the command line vaues we give at the time of ruunning of the code. argv is an list type so it can take the multiple input .
+		argv is present inside the sys module so to use it we have to import the module
