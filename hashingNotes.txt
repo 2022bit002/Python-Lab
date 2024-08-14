@@ -1,0 +1,11 @@
+---------------------------------------------------------
+	Hashing : pre storing and feteaching
+	
+	It is a technique used to store and retrive the data from a key-value store.
+	used to calculate unique key for each pieace of data.
+	Ways to implement the hashing are :
+		1.HashMap
+		2.HashTable 
+		3.HashSet
+		
+	 
