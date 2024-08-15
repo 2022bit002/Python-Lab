@@ -1,0 +1,51 @@
+	input is alwas of string type because it is the most comman type or datatype to be used.
+---------------------------------------------------------------------
+	command line argument can be access using the "argv" .This is present in side the sys module so we have to import the module to access the argv .It will return the input in the form of list.
+-------------------------------------------------------------------------
+	the first value of the list is the name of the file_name similar to the c language.
+----------------------------------------------------------------
+	if we want to acess only the argument and not the file_name then we can use the slice operator.
+ex: argv[1:]it will start from the first index instead of the zero index.
+ to print the line of the command line argument then we can use the len function to find the number of lines.
+	 we can also use the loop to print the command line arguments.	
+	 by default the elment inthe argv is nothing but string 'str'.	
+	 so they are the elment of the list which are of the string datatypes.
+	 we can save these commmand line argument using the slice operator .
+	 ex : args=argv[1:]     this will save all the elementin the args variable.
+	 space act as the seprator between two string it will be treated as one string if they are present inside the double quote . ex : pankaj dhoran   ==> it is two different words ex : "pankaj dhoran" this will be treated as the same string.
+	if we implement it using the single quote it will not be treated asthe one string.
+	we can consider triple quote as asingle string but we not consider as the single triple quote.
+	inernally it is treated as the stirng.
+-----------------------------------------------------------------------------
+	we can use the eval method for the evaluation.
+	if we use the index number which is greater than the number of the argumtentthen we will ab get inedx out of bound erro if we are not using the slice operator otherwise it may be called as inde out of bound.
+	if we use slice operaotr then no error.
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
