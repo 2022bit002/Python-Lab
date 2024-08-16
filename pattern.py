@@ -53,7 +53,7 @@ def print_pattern(x):
 		return 'Pattern is printed'
 
 
-print(print_pattern(4.0000))
+print(print_pattern(1.0))
  
 
 

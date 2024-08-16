@@ -1,0 +1,39 @@
+	print() function in python is more fexible than the other language print function.
+---------------------------------------------------------------------------------------------
+	form 1:
+		print function without any argument will give an blank line as an output
+		
+	form 2:
+		print function with the string argument.
+		escape character can be use with in print function and will give the desire output.
+		operator can also be used with in it with proper operand.
+		+ ==> both argument should be string.
+		* ==> one argument int and the other should be string.
+		
+		print("pankaj"+"dhoran") ==> pankajdhoran   (no space in between the two string)
+		print("pankaj","dhoran") ==> pankaj dhoran  (space between the string)
+		
+		
+	form 3:
+		print function with any number of argument. called as varag in java
+		space is the default seperator between the print argument.
+		if we don't want space and need comma in between the argument we an use the 'spe' tomark what will be the seprator.
+		ex : print(10,20,30,sep=':')==> 10:20:30
+		
+		
+	form 4:
+		with end attribute.
+		by default print function will be print in the new line.
+		if want to print ever thing in same line with the seprator 
+		ex : print ("hello",end=':')
+		     print ('pankaj')	
+		     ==> hello : pankaj
+		
+		
+		
+		
+		
+		
+		
+		
+		
