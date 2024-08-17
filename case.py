@@ -83,6 +83,21 @@ def zig_zag_pattern_using_builtins(text):
 	return result_string
 '''
 
+#another approach of reversing the string .
+
+def reverse_string_2(text):
+		string = ''
+		l=(len(text)-1)
+		
+		while(l>=0):
+			string += text[l]
+			l-=1
+			
+			
+		return string
+			
+	
+
 # function for calling different style and run the funciton
 def change_case(text,style):
 	if(style == 's' or style == 'S'):
@@ -101,5 +116,5 @@ def change_case(text,style):
 		return "Invaild Style"
 
 
-print(change_case("aNghJGjFkAJdhOran",'Z'))
+print(change_case("aNghJGjFkAJdhOran",'r'))
 
