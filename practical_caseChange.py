@@ -128,5 +128,5 @@ def change_case(text,style):
 		return "Invaild Style"
 
 
-print(change_case("aNghJGjFkAJdhOran",'r'))
+print(change_case("aNghJGjFkAJdhOran",'z'))
 
