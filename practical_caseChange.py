@@ -7,7 +7,7 @@ def small_case(text):
 	
 	for i in text :
 		ascii_value = ord(i);
-		if(ascii_value <91):
+		if(64<ascii_value <91):
 			result_string += chr(ascii_value + 32)
 		else:
 			result_string += i
@@ -21,7 +21,7 @@ def capital_case(text):
 	
 	for i in text :
 		ascii_value = ord(i);
-		if(ascii_value > 91):
+		if(96 < ascii_value < 123):
 			result_string += chr(ascii_value - 32)
 		else:
 			result_string += i
@@ -128,5 +128,5 @@ def change_case(text,style):
 		return "Invaild Style"
 
 
-print(change_case("aNghJGjFkAJdhOran",'z'))
+print(change_case("aNghJOr#@an",'r'))
 
