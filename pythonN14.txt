@@ -28,7 +28,85 @@
 		ex : print ("hello",end=':')
 		     print ('pankaj')	
 		     ==> hello : pankaj
+	
+	form 5:
+		print function with the formatted string.
+		%i ==> integer
+		%d ==> integer
+		%f ==> float 
+		%s ==> string
 		
+		a=90
+		print("formatted string : %i" %a  )
+		if a=90 b=80
+		print ("value of a: %i and value of b : %i" %(a b))
+		
+	
+	
+	form 6:
+		print function with the replacement operator
+		{} ==> this is nothing but the  replacement operator.
+		
+		name='pankaj'
+		salary = 2000
+		gf ='xxx'
+		
+		print("hello {0} your salary is {1} and your girlfriend is {3}".format(name,salary,gf))
+		if we donnot consider or write the number inside the curly bracket then it by default consider the number inside it.
+		we can also use the variable inside the {} bracket and assign them the vaue inside  the format method in print function.
+		
+	
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	FLOW CONTROL:
+		the order in which the statement are going to exected and  control the flow of the program.
+		
+		3 types:
+			conditional or selection statements :{if , if-else ,if-elif-else}
+			iterative statement or loops statement :{for loop , while }
+			transfer statement {break , continue , pass }
+			
+			
+		this are the important flow statements that will control the flow of the code done by the user in python coding.
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+-------------------------------------------------------------------------------------------------------------------------------
+
 		
 		
 		
