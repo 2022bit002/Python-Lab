@@ -47,19 +47,18 @@ def valid_str(inpt):
 	
 		if isinstance(item,str):
 			if string_validation(item):
-				print(item)
+				print(item,valid_count)
 				valid_count += 1
 			else:
 				invalid_count += 1
 		elif isinstance(item,(list, tuple)):
-			if valid_str(item):
-				valid_count += 1
-			else:
-				invalid_count += 1
+			sub_valid_count, sub_invalid_count = valid_str(item)
+			valid_count += sub_valid_count
+			invalid_count += sub_invalid_count
 			#
 	return (valid_count, invalid_count)
 	
-p = ['[](){}<>','sggs',('[[]]',''),23,'<>{}','{}}{',54,[23,53,74]]
+p = ['[](){}<>','sggs',('[[]]',('{}{}','sadf','{}')),23,'<>{}','{}}{',54,[23,53,74]]
 print(valid_str(p))
 	
 	

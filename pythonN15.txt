@@ -1,9 +1,80 @@
+	pass : it  use to pass the statement to the other
+----------------------------------------------------
+
+	del : keyword in python to delete the object for memory management and then available for the garbge collection.
+		code :  w=90
+			del w : this will delete the object from the dir and and made it available for the garbage collection.
+			
+			we cannot delete the char form the string as it is immutable.
+			so the bigest utilisation of the del keyword is memory utilisation.
+			used when the work of the variable is over.
+			once we delete and try to use the variable then it will give name not found error.
+			
+			if one or more refernce variable refer to the same object then if we use the del then that variable will be available but the other variable will be still refering toward the object.
+			
+--------------------------------------------------------------------------
+
+	Stirng object :
+------------------------------------------------------
+	problem 1 :
+		print('pankaj is the 'name of the boy')   this will give an error as this ' quote is not close inside the another quote 
+		sol 1 : so , we can wirte this inside the double quote.("now you can use this single ' quote inside the bracket")
+		sol 2 : use the black slash \ to run the statement .
+		sol 3 : we can also use the triple quote to use the single and double quote inside it.
+		
+----------------------------------------------------------------------
+
+	how to acess the character of the string .
+		1 > using the index of the string.
+		2 > using the slice method.
+		
+		
+		we can use the negative index but cannot use the index number greater than that of the length of the string.
+------------------------------------------------------------------------------------------------------------------------------------------------------	
+
+	Slice operator :  s[beginner : endindex : step] ==> syntax of the slice operator
+			if we does not give the end value and start value then start == 0 and end == length of the string.
+			and the step is by default 1.
+			step value can be +ve as well as -ve. +ve(left to right)  -ve(right to left)
+			s='012345678'
+			s[2:8:1] ==> 2 to 7
+			s[2:8:-1] ==> '' (this will give an empty string.)
+			s[2:8:0] ==> error (the step cannot be zero)
+			s[-1:-6:-1]==> this will give out put as they move in the back ward direction.
+			
+			for step -1 then the :;
+			default start ==> length of the string -1
+			default end ==> -( length of the string +1 )
+			
+			
+----------------------------------------------------------------------------------------------------------------------------------
+
+-ve ==> backward 
+begin to end + 1
 
 
-
-
-
-
++ve ==> forward 
+begin to end - 1
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	
 
 
 

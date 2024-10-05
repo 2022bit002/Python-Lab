@@ -18,7 +18,7 @@ def char_to_value(c):
         return ord(c) - ord('0')
     elif 'A' <= c <= 'Z':
         return ord(c) - ord('A') + 10
-    raise ValueError("Invalid character in input string")
+    return ("Invalid character in input string")
 
 # Helper function to convert a decimal value to its character equivalent
 def value_to_char(v, base):
@@ -30,7 +30,7 @@ def value_to_char(v, base):
     # For base 37, values 36 and above should be Roman numerals
     elif base == 37 and v >= 36:
         return to_roman(v - 35)  # Start Roman numerals at 36
-    raise ValueError("Invalid value")
+    return ("Invalid value")
 
 # Function to convert a number from one base to another
 def base_conversion(input_string, current_base, required_base):
@@ -68,7 +68,7 @@ def custom_slice(sequence, start=None, stop=None, step=1):
 
     # If step is zero, raise an error (as Python does with slices)
     if step == 0:
-        raise ValueError("Step cannot be zero")
+       return ("Step cannot be zero")
 
     # Handle None values for start and stop, mimicking default slice behavior
     if start is None:
@@ -109,62 +109,59 @@ print(custom_slice(s, -4, 100))  # Output: 'Hello, World!'
 
 # dfa function
 
-alphabet = ['a','b']
+# Define the alphabet for valid symbols
+alphabet = {'a', 'b'}
 
 def q0(text):
-	if text == '':
-		return 'q0'
-	symbol = text[:1]
-	#print(symbol)
-	if symbol in alphabet:
-		if symbol == 'a':
-			s = q1(text[1:])
-			return s
-			
-		else:
-			s = q0(text[1:])
-			return s
-			
-
-	
-	else:
-		return "rejected"
-	
-
+    # If the input string is empty, return the current state
+    if text == '':
+        return 'q0'
+    
+    symbol = text[0]
+    
+    # Check if the symbol is in the alphabet
+    if symbol in alphabet:
+        if symbol == 'a':
+            return q1(text[1:])  # Move to q1 if the symbol is 'a'
+        else:
+            return q0(text[1:])  # Stay in q0 for any other valid symbol ('b')
+    else:
+        return "rejected"  # Reject if the symbol is not in the alphabet
 
 
 def q1(text):
-
-	if text == '':
-		#print('q')
-		return 'q1'
-	symbol = text[:1]
-	#print(symbol)
-	if symbol == 'b' :
-		s = q0(text[1:])
-		return s
-	else:
-		s = q1(text[1:])
-		return s
-
-
-
+    # If the input string is empty, return the current state
+    if text == '':
+        return 'q1'
+    
+    symbol = text[0]
+    
+    # Check if the symbol is 'b'
+    if symbol == 'b':
+        return q0(text[1:])  # Move back to q0 if 'b' is encountered
+    else:
+        return q1(text[1:])  # Stay in q1 if the symbol is 'a'
 
 
 def dfa_ends_with_a(text):
-	final_state = ['q1']
-	
-	state = q0(text)
-	#print(state)
-	
-	if final_state[0] == state :
-		return "Accepted"
-	else:
-		return "Rejected"
+    # Define the final state (we want the string to end in q1, which happens if the last symbol is 'a')
+    final_state = 'q1'
+    
+    # Start the DFA from q0
+    state = q0(text)
+    
+    # Check if the final state is q1 (meaning the string ends with 'a')
+    if final_state == state:
+        return "Accepted"
+    else:
+        return "Rejected"
 
 
-
-print(dfa_ends_with_a('abba'))
+# Test the DFA with a sample input
+print(dfa_ends_with_a('abba'))  # Output: Rejected
+print(dfa_ends_with_a('a'))     # Output: Accepted
+print(dfa_ends_with_a('ab'))    # Output: Rejected
+print(dfa_ends_with_a('abaa'))  # Output: Accepted
 
 
 # change to roman from any base
@@ -183,25 +180,47 @@ def to_roman(n):
             n -= value
     return roman
 
+# Function to check if a character is valid for the given base
+def is_valid_in_base(char, base):
+    if char.isdigit():  # For '0'-'9'
+        return int(char) < base
+    elif char.isalpha():  # For 'A'-'Z' (only supports up to base 36)
+        return ord(char.upper()) - ord('A') + 10 < base
+    return False
+
+# Function to convert a string in a particular base to an integer
+def convert_to_integer(input_string, base):
+    number = 0
+    for char in input_string:
+        if not is_valid_in_base(char, base):
+            return -1  # Invalid character for the given base
+        if char.isdigit():
+            digit_value = int(char)
+        else:
+            digit_value = ord(char.upper()) - ord('A') + 10
+        number = number * base + digit_value
+    return number
+
 # Function to convert string in a particular base to Roman numeral
 def base_to_roman(input_string, base):
     # Step 1: Convert input string from the given base to an integer
-    try:
-        number = int(input_string, base)
-    except ValueError:
-        raise ValueError(f"Invalid input '{input_string}' for base {base}")
+    number = convert_to_integer(input_string, base)
+    
+    # If the number is invalid (negative), return an error
+    if number < 0:
+        return f"Invalid input '{input_string}' for base {base}"
 
     # Step 2: Convert the integer to a Roman numeral
     if number <= 0:
-        raise ValueError("Roman numerals can only represent positive integers")
+        return "Roman numerals can only represent positive integers"
     
     return to_roman(number)
 
 # Example usage:
-input_string = "A"  # Example binary input
-base = 16               # Base of the input string (binary)
+input_string = "3999"  # Example input in base 16
+base = 10           # Base of the input string (hexadecimal)
 
-# Convert the binary number "1010" (base 2) into a Roman numeral
+# Convert the input string "A" in base 16 to a Roman numeral
 roman_numeral = base_to_roman(input_string, base)
-print(roman_numeral)  # Output: 'X' (because 1010 in binary is 10 in decimal, and 10 is 'X' in Roman numerals)
+print(roman_numeral)  
 
