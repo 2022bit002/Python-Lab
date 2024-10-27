@@ -8,13 +8,16 @@ def print_cal(day,month,yy):
 	gap_day ={'sun':'      '*0,'mon':'      '*1,'tue':'      '*2,'wed':'      '*3,'thur':'      '*4,'fri':'      '*5,'sat':'      '*6}
 	month_dic = {1:'jan',2:'feb',3:'mar',4:'april',5:'may',6:'june',7:'july',8:'august',9:'september',10:'october',11:'november',12:'december'}
 	print(yy)
-	print(month_dic[month])
+	print(month_dic[month].capitalize())
 	for i in week_day:
 		print(i,end='   ')
 		
 	print()
+	mn=days_month[month]+1
+	if yy%4!=0 and yy%400!=0:
+		mn=days_month[month]
 	k=(first_day['sat']-first_day[day]+1)%7
-	for i in range(1,days_month[month]+1):
+	for i in range(1,mn):
 		if i==1:
 			print(end=gap_day[day])
 		if i<10: 
