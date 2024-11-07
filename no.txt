@@ -1,0 +1,31 @@
+1. Type Error :  Unhasable 
+	In Python, a dictionary key must be hashable, meaning it needs to be immutable and have a fixed hash value for its lifetime. Lists are mutable, meaning they can change, so they cannot be used as dictionary keys. Here are some common scenarios where you might encounter a "TypeError: unhashable type" error.
+	
+	
+2. * and ** is use to unpack the list and the dictionary as per the convinence of the user
+
+3. 	locals and globals are the local and global scope of the variable whereas the global key word change the scope of the variable from the local to the global
+	
+4.	while any object that implements the __iter__() method can be considered iterable, not all iterable objects are iterators. Iterators must implement both the __iter__() and __next__() methods, allowing them to maintain state and provide elements one at a time until they are exhausted. This distinction is crucial for understanding how Python's iteration protocol works.
+
+5.	
+stmt	The code to be executed (as a string)	"pass"
+setup	Code to set up the environment (as a string)	"pass"
+number	Number of times to execute the stmt	1000000
+globals	Dictionary for global variables used in stmt and setup	None
+timer	Custom timer function	time.perf_counter
+
+6.	
+open()	Opens a file. Returns a file object.
+read()	Reads the entire content of a file as a string.
+readline()	Reads one line from the file.
+readlines()	Reads all lines into a list of strings.
+write()	Writes a string to a file.
+writelines()	Writes a list of strings to a file.
+close()	Closes the file.
+seek()	Moves the file pointer to a specific position.
+tell()	Returns the current file pointer position.
+flush()	Forces unwritten data to be written to the file.
+truncate()	Truncates the file to a specified size.
+
+7.		

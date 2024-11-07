@@ -39,29 +39,24 @@ def get_even_odd_count3(I):
 	return even_count, odd_count
 	
 def check_the_time(I):
-	base0,base1,base2,base3=0,0,0,0
-	for i in range(100):
-		start = time.time()
-		get_even_odd_count0(I)
-		end = time.time()
-		base0 += start - end
-		start = time.time()
-		get_even_odd_count1(I)
-		end = time.time()
-		base1 += start - end
-		start = time.time()
-		get_even_odd_count2(I)
-		end = time.time()
-		base2 += start - end
-		start = time.time()
-		get_even_odd_count3(I)
-		end = time.time()
-		base3 += start - end
-	print(base0,base1,base2,base3)
-	base0 /=100
-	base3 /=100
-	base1 /=100
-	base2 /=100
+
+	start = time.time()
+	get_even_odd_count0(I)
+	end = time.time()
+	base0 = start - end
+	start = time.time()
+	get_even_odd_count1(I)
+	end = time.time()
+	base1 = start - end
+	start = time.time()
+	get_even_odd_count2(I)
+	end = time.time()
+	base2 = start - end
+	start = time.time()
+	get_even_odd_count3(I)
+	end = time.time()
+	base3 = start - end
+	
 	base1 = ((base0-base1)/base0)*100
 	base2 = ((base0-base2)/base0)*100
 	base3 = ((base0-base3)/base0)*100
